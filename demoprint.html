@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demoprint</title>
+</head>
+<body>
+    <div id="divone">
+        div one content is here.
+        <button onclick="myfun('divone')">div one</button>
+    </div>
+    <div id="divtwo">
+        div two content is here.
+        <button onclick="myfun('divtwo')">div two</button>
+    </div>
+    <div id="divthree">
+        div three content is here.
+        <button onclick="myfun('divthree')">div three</button>
+    </div>
+    <button onclick="mywholepage()">wholepage</button>
+    <div >
+        <button id="twitter" onclick="mytwitter()"> this is my first event</button>
+    </div>
+    <script type="text/javascript">
+        function mywholepage(){
+            window.print(); 
+        } 
+        function myfun(paravalue){
+            var backup = document.body.innerHTML;
+            var divcontent = document.getElementById(paravalue).innerHTML;
+            document.body.innerHTML = divcontent;
+            window.print();
+            document.body.innerHTML = divcontent;
+
+
+        }
+        function mytwitter()
+        {
+            document.body.style.backgroundColor = 'blue';
+        }
+
+    </script>
+</body>
+</html>

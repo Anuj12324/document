@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop statement</title>
+</head>
+
+<body>
+
+    <h2>JavaScript For Loop</h2>
+    <p id="demo"></p>
+    <script type="text/javascript">
+        const chocolates = ["Cadbury", "M&M", "Snickers", "Ferrero rocher"];
+        let i = 0;
+        let length = chocolates.length;
+        let tet = "  ";
+        for (; i < length;) {
+            tet += chocolates[i] + "<br>";
+            i++;
+        }
+        document.getElementById("demo").innerHTML = tet;
+    </script>
+
+    <h2>JavaScript For Loop</h2>
+    <p id="anuj"></p>
+    <script type="text/javascript">
+        const courses_offered = { c1: "C", c2: "C++", c3: "Java", c4: "Python" };
+        let text = "";
+        for (let x in courses_offered)
+         {
+            text += courses_offered[x] + "<br>";
+        }
+        document.getElementById("anuj").innerHTML = text;
+    </script>
+    <h2>JavaScript For Of Loop</h2>
+    <p id="garg"></p>
+    <script type ="text/javascript">
+        
+        let language = "Skill Academy ";
+        let tst = " " ;
+        for(let x of language)
+         {
+             tst += x + "<br>";
+            }
+            document.getElementById("garg").innerHTML = tst;
+        </script>
+        <h2>JavaScript Do While Loop</h2>
+        <script type="text/javascript">
+            let str = "";
+            let j = 0 ;
+            do {str +="<br> The number is "+ j;
+            j++;
+            }
+            while(j < 5);
+            document.write(str);
+            </script>
+            <h2> Java Script While Loop</h2>
+            <script type="text/javascript">
+            let string ="";
+            let k =0; 
+            while(k < 5) 
+            {string +="<br>The number is "+ k;
+            k++;
+            }
+            document.write(string); 
+            </script>
+            
+
+                <h2> Java Script nested Loop example</h2>
+                <script type="text/javascript">
+                for(var l = 1; l<=5; l++){
+                    var line="";
+                    for(var n=1; n<=l; n++){
+                        line +=n ;
+                    }
+                   
+                    document.write(line);
+                    document.write( " <br>");
+                }
+                </script>
+                 <h2> Java Script nested Loop example</h2>             f                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+                 <script type="text/javascript"> 
+                 for(var l = 1; l<=5; l++){
+                     var line="";
+                     for(var n=1; n<=l; n++){
+                         line +=l ;
+                     }
+                    
+                     document.write(line);
+                     document.write( " <br>");
+                 }
+                 </script>
+</body>
+
+</html>

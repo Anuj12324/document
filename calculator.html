@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        body{
+            background-image: url('cccccc.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        h1{
+            margin-top: 250px;
+            text-align: center;
+        }
+                #id{
+            width: 200px;
+        }
+        .a{
+            width: 60px;
+            margin: 2px;
+            padding: 2px;
+            font-size: 20px;
+            
+        }
+        .b{
+            width: 188px;
+            margin-top: 10px;
+            background-color: aqua;
+            color: black;
+            padding: 3px;
+            height: 20px;
+            font-size: 20px;
+        }
+        .c{
+            width: 190px;
+            margin-bottom: 2px;
+            padding: 3px;
+            height: 25px;
+        }
+        .form{
+            text-align: center;
+            align-items: center;
+            border:  2px solid black;
+            width: 210px;
+            height: 300px;
+            margin-left: 650px;
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Calculator using by html css</h1>
+    <div class="form">
+        <form name="formin">
+            <input class="b" type="text" name="answers"><br>
+<br>
+            <input class="a" type="button" value="1" onclick="formin.answers.value += '1'">
+            <input class="a"type="button" value="2" onclick="formin.answers.value += '2'">
+            <input class="a"type="button" value="3" onclick="formin.answers.value += '3'">
+<br>
+            <input class="a" type="button" value="4" onclick="formin.answers.value += '4'">
+            <input class="a" type="button" value="5" onclick="formin.answers.value += '5'">
+            <input class="a" type="button" value="6" onclick="formin.answers.value += '6'">
+<br>
+            <input class="a" type="button" value="7" onclick="formin.answers.value += '7'">
+            <input  class="a" type="button" value="8" onclick="formin.answers.value += '8'">
+            <input class="a" type="button" value="9" onclick="formin.answers.value += '9'">
+<br>
+            <input class="a" type="button" value="+" onclick="formin.answers.value += '+'">
+            <input class="a" type="button" value="-" onclick="formin.answers.value += '-'">
+            <input class="a" type="button" value="*" onclick="formin.answers.value += '*'">
+            <br>
+            <input class="a" type="button" value="/" onclick="formin.answers.value += '/'">
+            <input class="a" type="button" value="0" onclick="formin.answers.value += '0'">
+            <input class="a" type="button" value="=" onclick="formin.answers.value = eval(formin.answers.value)">
+            <br> 
+            <br>                         
+                              <input class="c" type="button" value="clear all" onclick="formin.answers.value = ''" id="clear"> 
+        </form>            
+    </div>
+</body>
+</html>
