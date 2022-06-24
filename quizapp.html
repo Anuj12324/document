@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz app</title>
+    <style>
+        /* user detail */
+        .home {
+       
+         border-radius: 2px solid #0095B6;
+         box-shadow: 50px solid whitesmoke;
+         border-style: ridge;
+         height: 610px;
+            margin-left: 290px;
+            margin-right: 290px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: rgba(240, 255, 255, 0.563);
+
+        }
+
+        img {
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        .user-detail {
+
+            font-size: 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(48, 57, 52, 0.514);
+        }
+
+        .categary-section {
+         text-align: center;
+            height: 100px;
+            margin: 2px;
+        }
+
+        #btn {
+            background-color: #0095B6;
+            border-radius: 3px;
+            color: white;
+            padding: 5px;
+        }
+
+        .name {
+            width: 480px;
+            margin: 5px;
+            height: 25px;
+            border-radius: 3px;
+        }
+
+        /* user detail */
+        #btn1{
+           width: 250px;
+           border: 3px solid #0095B6;
+           background-color: #0095b6af;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <!-- // user detail // -->
+        <div class="user-detail">
+            <img src="testbook img.jpg">
+            <h1 style="color: #0095B6 ; margin-top: -10px;">Hello user !</h1>
+            <p><b> Enter your name to continue the Quiz.</b></p>
+            <input type="text" class="name" placeholder="Enter your name.....">
+            <button id="btn">ENTER</button>
+            <p style="font-size:15px ;"><span>You'll have 10 seconds to answer each questions</span></p>
+        </div>
+        <!-- // user detail // -->
+
+
+        <!-- // categary section // -->
+
+
+        <div class="categary-section">
+            <h1 style="color: #0095B6; text-align: center;"> SELECT CATEGORY </h1>
+           <a href="http://127.0.0.1:5500/quiapp1.html" > <button id="btn1" style="padding: 5px; margin-left: 30px;"><b>Pipes And Cisterns</b></button></a>
+             <button id="btn1" style="padding: 5px; margin-left: 30px;"><b>Probability</b></button>
+             <br></br>
+             <button id="btn1" style="padding: 5px; margin-left: 30px;"><b>Problem On Ages</b></button>
+             <button id="btn1" style="padding: 5px; margin-left: 30px;"><b>Profit And Loss</b></button>
+        </div>
+
+        <!-- // categary section // -->
+    </div>
+</body>
+
+</html>
